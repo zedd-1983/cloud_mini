@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_page_style {
+  background: black;
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+</style>
+
+  <body bgcolor="grey">
+    <div class="content">
+      <div style="min-height:300px; text-align:center;justify-content:center; align-items:center; padding:500px;">
+          <form action="/login" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="passwd" name="passwd"><br><br>
+            <input type="submit" value="Login">
+            <button type="button" onclick="document.location = 'reg_form.html'">New user</button>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
